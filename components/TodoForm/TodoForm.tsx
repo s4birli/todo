@@ -66,10 +66,6 @@ const TodoForm: React.FC = () => {
     setUncompletedTasks(uncompleted);
   };
 
-  const handleDateChange = (date: Date | null) => {
-    setSelectedDate(date);
-  };
-
   const handleAddTask = async (task: string) => {
     try {
       if (task.trim() !== "") {

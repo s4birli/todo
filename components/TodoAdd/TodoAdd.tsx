@@ -5,9 +5,9 @@ import {
   TASK_INITIAL_VALUES,
   TASK_VALIDATION_SCHEMA,
 } from "../../lib/validationSchema/taskValidation";
-import { Todo, TodoInitial } from "../../lib/types/Todo";
+import { TodoInitial } from "../../lib/types/Todo";
 
-const TodoForm: FC<TodoAddProps> = ({ onAddTask }) => {
+const TodoAdd: FC<TodoAddProps> = ({ onAddTask }) => {
   const handleFormSubmit = async (
     values: TodoInitial,
     actions: FormikHelpers<TodoInitial>
@@ -51,4 +51,4 @@ const TodoForm: FC<TodoAddProps> = ({ onAddTask }) => {
   );
 };
 
-export default TodoForm;
+export default TodoAdd;

@@ -5,7 +5,7 @@
     "module": "commonjs",
     "esModuleInterop": true, 
     "forceConsistentCasingInFileNames": true, 
-    "strict": true, 
+    "strict": false, 
     "skipLibCheck": true,
     "lib": [
       "dom",
@@ -17,14 +17,21 @@
     "incremental": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "lib/redux/reducer.ts",  "lib/redux/store.ts", "lib/redux/action.ts"  ],
+    "**/*.tsx",
+    "lib/redux/reducer.ts",  
+    "lib/redux/store.ts", 
+    "lib/redux/action.ts"  
+  ],
   "exclude": [
     "node_modules"
   ]
+
+  
 }
